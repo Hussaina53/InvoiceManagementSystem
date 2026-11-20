@@ -1,0 +1,217 @@
+.sidebar-items,.sidebar,.header,.footer{
+    background:#0f766e;
+}
+.sidebar{
+    max-width: 100%;
+    width: 15%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.footer{
+    text-align: end;
+}
+body{
+    max-width:100%;
+    color:white;
+    overflow-x: hidden;
+}
+.card{
+    background:#E5E7EB;
+}
+.dashboard-class{
+    height:15%;
+}
+.dashboard-class .row{
+    height:100%;
+}
+.black-font{
+    color:black;
+}
+.btn{
+    background-color: #19CFBD;
+    color:#fff;
+}
+.btn:hover{
+    background-color: #19CFBD;
+    color:#000;
+}
+.flex-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.textarea{
+    background-color:#E5E7EB;
+}
+.bill-details,.inv-details{
+    margin-bottom: 7px;
+}
+.colour-card{
+    background-color: #b9dfd7;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-bg-type: #b9dfd7;
+}
+.hide{
+    display:none;
+}
+#mail_id,#address{
+    background-color: #E5E7EB;
+}
+.justify-items-center {
+    justify-items: center;
+}
+#quotation-list-table_info,#invoice-list-table_info{
+    color: black;
+}
+.menu-holder-class{
+    display:none;
+}
+.sidebar-mobile{
+    display: none;
+}
+.item-header{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.item-desc {
+    width: 100%;
+    min-height: 120px;      /* mobile */
+    resize: vertical;
+    max-height: 300px;   /* or use rows-based units: 8lh */
+    overflow-y: auto;
+}
+.desc-class{
+    width:50%;
+}
+/* .flex-grow-1 {
+    min-width: 0;
+} */
+/* table {
+    max-width: 100%;
+} */
+ /* XX-Large devices (larger desktops, 1400px and up) */
+/* @media (max-width: 1400px) {
+} */
+
+ /* X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+} */
+
+ /* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+
+} */
+
+/* Medium devices (tablets, 768px and up) */
+/* @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-main-class{
+        width: 50% !important;
+    }
+} */
+
+ /* Small devices (landscape phones, 960px and less) */
+@media(max-width:960px){
+    .flex-grow-1 {
+        min-width: 0;   /* allows the flex item to shrink below its content width */
+    }
+    .content-class {
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+    }
+    .menu-ul{
+        display:block;
+        width:100%;
+    }
+    .responsive-col {
+        flex-direction: column;
+        gap: 0.5rem !important;
+        margin-bottom:10px;
+    }
+    .menu-holder-class{
+        display: block;
+    }
+    .header{
+        display:flex;
+        align-items: center;
+        gap: 15%;
+    }
+    .sidebar-mobile{
+        /* display: block; */
+        width:100%;
+    }
+    .item-desc{
+        min-height: 140px;
+    }
+    .billing-details,.billing-details div{
+        display: block;
+        width:100%;
+    }
+    .billing-details{
+        flex-direction: column;
+    }
+    .notes-div{
+        flex-direction: column;
+        width: 100%;
+    }
+    .notes-div div{
+        width: 100%;
+    }
+    #invoice-create-form,#quotation-create-form{
+        justify-items: center;
+    }
+
+
+    /* Column widths, applied on all screens */
+    #line_item_table {
+    width: 100%;
+    min-width: 600px;          /* table never gets narrower than this */
+    }
+
+    #line_item_table th,
+    #line_item_table td {
+    white-space: nowrap;       /* keep headers and cells on one line */
+    vertical-align: middle;
+    }
+
+    /* Keep inputs usable and finger-friendly */
+    #line_item_table .form-control,
+    #line_item_table .form-select {
+    min-width: 80px;
+    min-height: 40px;
+    }
+    .desc{
+        width:25%;
+    }
+    .discount_percent,.tax_percent{
+        width: 50px;
+    }
+    .discount,.tax{
+        align-items: baseline;
+    }
+    .discount span,.tax span{
+        justify-items: self-end;
+    }
+
+    .table-responsive-nested{
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto !important;
+        overflow-y: hidden;
+        display: block;
+    }
+
+    .table-responsive-nested table{
+        width: 100%;
+        min-width: 650px;
+    }
+}
+/* small phones */
+@media (max-width: 768px) {
+    .header{
+        gap: 10%;
+    }
+}
